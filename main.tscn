@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8aiu77xk5vx"]
+
+[ext_resource type="PackedScene" uid="uid://b30323hb3ua76" path="res://assets/copter/copter.tscn" id="1_f525f"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="copter" parent="." instance=ExtResource("1_f525f")]
+top_level = true
+position = Vector2(30, -136)
