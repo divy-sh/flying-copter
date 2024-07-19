@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dru1u5h12mbop"]
+
+[ext_resource type="PackedScene" uid="uid://bg2mufxm8t4g5" path="res://assets/ui/play/play.tscn" id="1_1cjai"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="play" parent="." instance=ExtResource("1_1cjai")]
+offset_left = 360.0
+offset_top = 800.0
+offset_right = 528.0
+offset_bottom = 888.0

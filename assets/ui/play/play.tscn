@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bg2mufxm8t4g5"]
+
+[ext_resource type="Texture2D" uid="uid://drd1ca7gv4a6b" path="res://assets/ui/play/Default.png" id="1_0agmx"]
+[ext_resource type="Texture2D" uid="uid://gsrdg5jy6318" path="res://assets/ui/play/Hover.png" id="2_gar1d"]
+[ext_resource type="Script" path="res://assets/ui/Repeat/retry.gd" id="3_lnomi"]
+
+[node name="play" type="TextureButton"]
+anchors_preset = -1
+anchor_left = 0.433
+anchor_top = 0.567
+anchor_right = 0.433
+anchor_bottom = 0.567
+offset_left = -147.64
+offset_top = -88.6401
+offset_right = 20.36
+offset_bottom = -0.64006
+scale = Vector2(2, 2)
+texture_normal = ExtResource("1_0agmx")
+texture_pressed = ExtResource("2_gar1d")
+script = ExtResource("3_lnomi")

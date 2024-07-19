@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://knccs74drbc2"]
+
+[ext_resource type="Texture2D" uid="uid://dlswgmop1fmbu" path="res://assets/ui/text.png" id="1_8tkeq"]
+[ext_resource type="PackedScene" uid="uid://y5qgnqu6q2bx" path="res://assets/ui/Home/home.tscn" id="2_p3bdj"]
+[ext_resource type="PackedScene" uid="uid://cnf63u2022kr8" path="res://assets/ui/Repeat/retry.tscn" id="3_edt0w"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Text" type="Sprite2D" parent="."]
+position = Vector2(550, 540)
+texture = ExtResource("1_8tkeq")
+
+[node name="home" parent="." instance=ExtResource("2_p3bdj")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.359
+anchor_top = 0.567
+anchor_right = 0.359
+anchor_bottom = 0.567
+offset_left = -87.72
+offset_top = -88.6401
+offset_right = 0.279971
+offset_bottom = -0.64006
+
+[node name="retry" parent="." instance=ExtResource("3_edt0w")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.637
+anchor_top = 0.567
+anchor_right = 0.637
+anchor_bottom = 0.567
+offset_left = -87.96
+offset_top = -88.6401
+offset_right = 0.0399737
+offset_bottom = -0.64006
+scale = Vector2(2, 2)

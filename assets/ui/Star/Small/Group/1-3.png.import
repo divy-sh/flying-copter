@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byu0yaq1h3s26"
-path="res://.godot/imported/Skyscraper_Buildings _pack_OldNinjaCat_v1.png-c8db7fd8e2c1913a7983d32f812a4fa3.ctex"
+uid="uid://cafbtd8utjagb"
+path="res://.godot/imported/1-3.png-76b110ca9df7607d3ff83486b399cb47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/buildingPair/Skyscraper_Buildings _pack_OldNinjaCat_v1.png"
-dest_files=["res://.godot/imported/Skyscraper_Buildings _pack_OldNinjaCat_v1.png-c8db7fd8e2c1913a7983d32f812a4fa3.ctex"]
+source_file="res://assets/ui/png/Star/Small/Group/1-3.png"
+dest_files=["res://.godot/imported/1-3.png-76b110ca9df7607d3ff83486b399cb47.ctex"]
 
 [params]
 
