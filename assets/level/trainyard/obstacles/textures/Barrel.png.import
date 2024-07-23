@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://peg3kmoothks"
-path="res://.godot/imported/Unactive.png-db221bc234418278dadeefd628e632f3.ctex"
+uid="uid://ykj72gbbeqeu"
+path="res://.godot/imported/Barrel.png-c0ca04e1dd254c2fb630e8feae4bf46d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/Star/Medium/Unactive.png"
-dest_files=["res://.godot/imported/Unactive.png-db221bc234418278dadeefd628e632f3.ctex"]
+source_file="res://assets/level/trainyard/obstacles/textures/Barrel.png"
+dest_files=["res://.godot/imported/Barrel.png-c0ca04e1dd254c2fb630e8feae4bf46d.ctex"]
 
 [params]
 

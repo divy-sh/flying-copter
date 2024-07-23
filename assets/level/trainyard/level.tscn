@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2s7u6wc044fg"]
+
+[ext_resource type="Script" path="res://assets/level/trainyard/level.gd" id="1_bnonx"]
+[ext_resource type="PackedScene" uid="uid://dge7t7ehikqn1" path="res://assets/level/trainyard/Background/bg.tscn" id="2_c34yp"]
+
+[node name="trainyard" type="Node2D"]
+script = ExtResource("1_bnonx")
+
+[node name="Bg" parent="." instance=ExtResource("2_c34yp")]
+position = Vector2(2.08165e-12, 2.08165e-12)

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://csa36noa2oq6d"]
+
+[ext_resource type="Texture2D" uid="uid://bawbiu32y2a1l" path="res://assets/level/trainyard/obstacles/textures/CardboardSmall.png" id="1_kul7d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wdei"]
+size = Vector2(192, 192)
+
+[node name="CardboardSmall" type="RigidBody2D"]
+
+[node name="CardboardSmall" type="Sprite2D" parent="."]
+position = Vector2(737, 96)
+texture = ExtResource("1_kul7d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(737, 96)
+shape = SubResource("RectangleShape2D_5wdei")

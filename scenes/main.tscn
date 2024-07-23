@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://b8aiu77xk5vx"]
+[gd_scene load_steps=3 format=3 uid="uid://b8aiu77xk5vx"]
 
 [ext_resource type="PackedScene" uid="uid://b30323hb3ua76" path="res://assets/copter/copter.tscn" id="1_f525f"]
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_td3ms"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_td3ms")
 
 [node name="copter" parent="." instance=ExtResource("1_f525f")]
 top_level = true

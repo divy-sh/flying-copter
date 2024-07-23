@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://peg3kmoothks"
-path="res://.godot/imported/Unactive.png-db221bc234418278dadeefd628e632f3.ctex"
+uid="uid://cvy38byp7gvmg"
+path="res://.godot/imported/BackgroundNoFence.png-604972d7f7dccbc94f7863c3519179a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ui/Star/Medium/Unactive.png"
-dest_files=["res://.godot/imported/Unactive.png-db221bc234418278dadeefd628e632f3.ctex"]
+source_file="res://assets/level/trainyard/Background/BackgroundNoFence.png"
+dest_files=["res://.godot/imported/BackgroundNoFence.png-604972d7f7dccbc94f7863c3519179a9.ctex"]
 
 [params]
 

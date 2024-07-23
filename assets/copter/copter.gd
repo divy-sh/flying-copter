@@ -14,3 +14,10 @@ func _process(_delta):
 func _input(event):
 	if event.is_pressed():
 		self.linear_velocity = Vector2(0, -800)
+
+func _integrate_forces(state):
+	for i in range(state.get_contact_count()):
+		var contact_collider = state.get_contact_collider_object(i)
+		if contact_collider:
+			print("Colliding with: ", contact_collider.name)
+			get_tree().change_scene_to_file("res://scenes/game_over.tscn")

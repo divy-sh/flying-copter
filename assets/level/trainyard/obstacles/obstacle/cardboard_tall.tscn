@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://csai1ieu8sl5c"]
+
+[ext_resource type="Texture2D" uid="uid://cc8hitsljyu13" path="res://assets/level/trainyard/obstacles/textures/CardboardTall.png" id="1_vxbru"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fsgqi"]
+size = Vector2(240, 336)
+
+[node name="CardboardTall" type="StaticBody2D"]
+
+[node name="CardboardTall" type="Sprite2D" parent="."]
+position = Vector2(235, 172)
+texture = ExtResource("1_vxbru")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(235, 172)
+shape = SubResource("RectangleShape2D_fsgqi")
