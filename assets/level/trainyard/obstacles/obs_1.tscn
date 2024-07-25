@@ -1,24 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://bxj4hdo1mfejk"]
+[gd_scene load_steps=4 format=3 uid="uid://d2jmpjwe2mgj5"]
 
 [ext_resource type="PackedScene" uid="uid://b1oesi0bgmkxu" path="res://assets/level/trainyard/obstacles/obstacle/barrel.tscn" id="1_2hvkl"]
 [ext_resource type="PackedScene" uid="uid://tjseqghqkho" path="res://assets/level/trainyard/obstacles/obstacle/crate_big.tscn" id="2_kclhy"]
-[ext_resource type="PackedScene" uid="uid://csai1ieu8sl5c" path="res://assets/level/trainyard/obstacles/obstacle/cardboard_tall.tscn" id="4_nxooa"]
-[ext_resource type="PackedScene" uid="uid://dt6md20ybo00x" path="res://assets/level/trainyard/obstacles/obstacle/crate_small.tscn" id="5_tjbs3"]
 [ext_resource type="PackedScene" uid="uid://brxmxhcv6x6dm" path="res://assets/level/trainyard/obstacles/obstacle/ground.tscn" id="6_t3bw3"]
 
-[node name="Obs1" type="Node"]
-
-[node name="Ground" parent="." instance=ExtResource("6_t3bw3")]
-position = Vector2(4, -43)
-
-[node name="CrateSmall" parent="." instance=ExtResource("5_tjbs3")]
-position = Vector2(-4, -43)
+[node name="obs_1" type="Node2D"]
 
 [node name="Barrel" parent="." instance=ExtResource("1_2hvkl")]
-position = Vector2(-559, -1000)
+position = Vector2(167, -1104)
 
-[node name="CardboardTall" parent="." instance=ExtResource("4_nxooa")]
-position = Vector2(451, 0)
+[node name="Ground" parent="." instance=ExtResource("6_t3bw3")]
+position = Vector2(-20, -112)
 
 [node name="CrateBig" parent="." instance=ExtResource("2_kclhy")]
-position = Vector2(1493, 687)
+position = Vector2(1751, 608)

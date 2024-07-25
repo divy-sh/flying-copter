@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1ny31yaikf3h"]
+
+[ext_resource type="PackedScene" uid="uid://b1oesi0bgmkxu" path="res://assets/level/trainyard/obstacles/obstacle/barrel.tscn" id="1_dagd4"]
+[ext_resource type="PackedScene" uid="uid://brxmxhcv6x6dm" path="res://assets/level/trainyard/obstacles/obstacle/ground.tscn" id="2_u3qdi"]
+[ext_resource type="PackedScene" uid="uid://csai1ieu8sl5c" path="res://assets/level/trainyard/obstacles/obstacle/cardboard_tall.tscn" id="3_l8ykv"]
+
+[node name="obs_1" type="Node2D"]
+
+[node name="Barrel" parent="." instance=ExtResource("1_dagd4")]
+position = Vector2(89, -112)
+
+[node name="Ground" parent="." instance=ExtResource("2_u3qdi")]
+position = Vector2(-20, -112)
+
+[node name="CardboardTall" parent="." instance=ExtResource("3_l8ykv")]
+position = Vector2(148, -3)
