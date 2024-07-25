@@ -10,10 +10,14 @@ func _ready():
 func _process(_delta):
 	if position.y > 800 or position.y < -800:
 		get_tree().change_scene_to_file("res://scenes/game_over.tscn")
+	
+	var sprite = self.find_child("sprite")
+	var target_rotation = self.linear_velocity.y / 1000
+	sprite.rotation = lerp_angle(sprite.rotation, target_rotation, 0.1)
 
 func _input(event):
 	if event.is_pressed():
-		self.linear_velocity = Vector2(0, -800)
+		self.linear_velocity = Vector2(0, -1000)
 
 func _integrate_forces(state):
 	for i in range(state.get_contact_count()):
