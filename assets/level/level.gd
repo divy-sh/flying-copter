@@ -14,15 +14,15 @@ func _ready():
 		var obstacle_path = "res://assets/level/trainyard/obstacles/obs_%d.tscn" % (i + 1)
 		obstacles.append(load(obstacle_path))
 	spawn_obstacles()
-
+	
 func _process(delta):
 	process_obstacle_physics(delta)
 
 func spawn_obstacles():
 	first = obstacles[randi() % OBSTACLE_COUNT].instantiate()
-	first.position = Vector2(0, obstacle_sway())
+	first.position = Vector2(SPAWN_OFFSET, obstacle_sway())
 	second = obstacles[randi() % OBSTACLE_COUNT].instantiate()
-	second.position = Vector2(SPAWN_OFFSET, obstacle_sway())
+	second.position = Vector2(SPAWN_OFFSET * 2, obstacle_sway())
 	add_child(first)
 	add_child(second)
 

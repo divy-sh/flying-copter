@@ -20,6 +20,7 @@ func _input(event):
 		self.linear_velocity = Vector2(0, -1000)
 
 func _integrate_forces(state):
+	pass
 	for i in range(state.get_contact_count()):
 		var contact_collider = state.get_contact_collider_object(i)
 		if contact_collider:
