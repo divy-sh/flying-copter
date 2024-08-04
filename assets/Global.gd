@@ -6,7 +6,7 @@ var save_data = {
 }
 
 func save():
-	save_data.best_score = max(save_data.current_score, save_data.best_score)
+	save_data.high_score = max(save_data.current_score, save_data.high_score)
 	var save_file = FileAccess.open("user://save.cfg", FileAccess.WRITE)
 	save_file.store_var(save_data.best_score)
 	save_file.close()

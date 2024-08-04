@@ -4,6 +4,7 @@ extends RigidBody2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Global.load()
+	Global.save_data.current_score = 0
 	pass # Replace with function body.
 
 
@@ -30,5 +31,4 @@ func _integrate_forces(state):
 
 func game_over():
 	Global.save()
-	Global.save_data.current_score = 0
 	get_tree().change_scene_to_file("res://scenes/game_over.tscn")
