@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bawbiu32y2a1l"
-path="res://.godot/imported/CardboardSmall.png-f3f37ea0681ada2d748b5e58a4952d54.ctex"
+uid="uid://u8yosl6s5b2p"
+path="res://.godot/imported/_11_background.png-80bfec8a4fdc41b5db736b8971a3d0ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/level/trainyard/obstacles/textures/CardboardSmall.png"
-dest_files=["res://.godot/imported/CardboardSmall.png-f3f37ea0681ada2d748b5e58a4952d54.ctex"]
+source_file="res://assets/level/level1/background/_11_background.png"
+dest_files=["res://.godot/imported/_11_background.png-80bfec8a4fdc41b5db736b8971a3d0ba.ctex"]
 
 [params]
 

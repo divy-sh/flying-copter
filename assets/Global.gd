@@ -1,5 +1,7 @@
 extends Node
 
+var SPEED = -300
+
 var save_data = {
 	"current_score": 0,
 	"high_score": 0

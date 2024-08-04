@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ykj72gbbeqeu"
-path="res://.godot/imported/Barrel.png-c0ca04e1dd254c2fb630e8feae4bf46d.ctex"
+uid="uid://dac3hguutk7n7"
+path="res://.godot/imported/_03_distant_trees.png-bc241ab9aa19c7a8b4306f243650e43a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/level/trainyard/obstacles/textures/Barrel.png"
-dest_files=["res://.godot/imported/Barrel.png-c0ca04e1dd254c2fb630e8feae4bf46d.ctex"]
+source_file="res://assets/level/level1/background/_03_distant_trees.png"
+dest_files=["res://.godot/imported/_03_distant_trees.png-bc241ab9aa19c7a8b4306f243650e43a.ctex"]
 
 [params]
 

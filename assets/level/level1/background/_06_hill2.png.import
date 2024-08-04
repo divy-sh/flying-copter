@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgcb2rqu6btgu"
-path="res://.godot/imported/CrateBig.png-68b4dbc243c1a1555a68eaa08b64f315.ctex"
+uid="uid://dsiacqtafnbca"
+path="res://.godot/imported/_06_hill2.png-726039c1bb5a8103820eb496ae4467dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/level/trainyard/obstacles/textures/CrateBig.png"
-dest_files=["res://.godot/imported/CrateBig.png-68b4dbc243c1a1555a68eaa08b64f315.ctex"]
+source_file="res://assets/level/level1/background/_06_hill2.png"
+dest_files=["res://.godot/imported/_06_hill2.png-726039c1bb5a8103820eb496ae4467dd.ctex"]
 
 [params]
 

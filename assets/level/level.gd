@@ -1,7 +1,6 @@
 extends Node2D
 
 const OBSTACLE_COUNT = 6
-var SPEED = -300
 var SPAWN_OFFSET = 1080
 var OBSTACLE_SWAY = 400
 
@@ -13,7 +12,7 @@ var score_ui
 
 func _ready():
 	for i in range(OBSTACLE_COUNT):
-		var obstacle_path = "res://assets/level/trainyard/obstacles/obs_%d.tscn" % (i + 1)
+		var obstacle_path = "res://assets/level/level1/obstacles/obs_%d.tscn" % (i + 1)
 		obstacles.append(load(obstacle_path))
 	spawn_obstacles()
 	spawn_ui()
@@ -37,9 +36,9 @@ func spawn_ui():
 
 func process_obstacle_physics(delta):
 	if first and first is Node2D:
-		first.position += Vector2(SPEED, 0) * delta
+		first.position += Vector2(Global.SPEED, 0) * delta
 	if second and second is Node2D:
-		second.position += Vector2(SPEED, 0) * delta
+		second.position += Vector2(Global.SPEED, 0) * delta
 	
 	if first.position.x < -SPAWN_OFFSET:
 		first = reset_obstacle(first)
