@@ -3,13 +3,14 @@ extends RigidBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Global.load()
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if position.y > 800 or position.y < -800:
-		get_tree().change_scene_to_file("res://scenes/game_over.tscn")
+	if position.y > 1000 or position.y < -800:
+		game_over()
 	
 	var sprite = self.find_child("sprite")
 	var target_rotation = self.linear_velocity.y / 1000
@@ -25,4 +26,9 @@ func _integrate_forces(state):
 		var contact_collider = state.get_contact_collider_object(i)
 		if contact_collider:
 			print("Colliding with: ", contact_collider.name)
-			get_tree().change_scene_to_file("res://scenes/game_over.tscn")
+			game_over()
+
+func game_over():
+	Global.save()
+	Global.save_data.current_score = 0
+	get_tree().change_scene_to_file("res://scenes/game_over.tscn")

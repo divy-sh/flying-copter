@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5bg7bt8n7ou8"]
+
+[ext_resource type="PackedScene" uid="uid://dt6md20ybo00x" path="res://assets/level/trainyard/obstacles/obstacle/crate_small.tscn" id="2_g0wtr"]
+
+[node name="obs_1" type="Node2D"]
+
+[node name="CrateSmall" parent="." instance=ExtResource("2_g0wtr")]
+position = Vector2(305, -1139)
+
+[node name="CrateSmall2" parent="." instance=ExtResource("2_g0wtr")]
+position = Vector2(322, -481)
+
+[node name="CrateSmall3" parent="." instance=ExtResource("2_g0wtr")]
+position = Vector2(336, 230)
+
+[node name="CrateSmall3" parent="CrateSmall3" instance=ExtResource("2_g0wtr")]
+position = Vector2(10, 749)
+
+[node name="CrateSmall3" parent="CrateSmall3/CrateSmall3" instance=ExtResource("2_g0wtr")]
+position = Vector2(-67, -2853)

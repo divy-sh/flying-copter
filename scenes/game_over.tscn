@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://knccs74drbc2"]
+[gd_scene load_steps=5 format=3 uid="uid://knccs74drbc2"]
 
-[ext_resource type="Texture2D" uid="uid://dlswgmop1fmbu" path="res://assets/ui/text.png" id="1_8tkeq"]
 [ext_resource type="PackedScene" uid="uid://y5qgnqu6q2bx" path="res://assets/ui/Home/home.tscn" id="2_p3bdj"]
 [ext_resource type="PackedScene" uid="uid://cnf63u2022kr8" path="res://assets/ui/Repeat/retry.tscn" id="3_edt0w"]
+[ext_resource type="FontFile" uid="uid://willmtt73lyj" path="res://assets/ui/toxigenesis bd.otf" id="3_yksrr"]
+[ext_resource type="Script" path="res://scenes/game_over.gd" id="4_fs4et"]
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -11,10 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Text" type="Sprite2D" parent="."]
-position = Vector2(550, 540)
-texture = ExtResource("1_8tkeq")
+script = ExtResource("4_fs4et")
 
 [node name="home" parent="." instance=ExtResource("2_p3bdj")]
 layout_mode = 1
@@ -40,3 +38,39 @@ offset_top = -88.6401
 offset_right = 0.0399737
 offset_bottom = -0.64006
 scale = Vector2(2, 2)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 248.0
+offset_right = 976.0
+offset_bottom = 393.0
+theme_override_fonts/font = ExtResource("3_yksrr")
+theme_override_font_sizes/font_size = 120
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 532.0
+offset_right = 976.0
+offset_bottom = 677.0
+theme_override_fonts/font = ExtResource("3_yksrr")
+theme_override_font_sizes/font_size = 60
+text = "YOUR SCORE : "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="high_score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 750.0
+offset_right = 972.0
+offset_bottom = 895.0
+theme_override_fonts/font = ExtResource("3_yksrr")
+theme_override_font_sizes/font_size = 60
+text = "HIGH SCORE : "
+horizontal_alignment = 1
+vertical_alignment = 1

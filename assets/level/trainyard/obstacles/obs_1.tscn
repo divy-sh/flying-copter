@@ -8,10 +8,16 @@
 position = Vector2(-256, -788)
 
 [node name="Barrel2" parent="Barrel" instance=ExtResource("1_2hvkl")]
-position = Vector2(0, -504)
+position = Vector2(-1, -482)
+
+[node name="Barrel3" parent="Barrel" instance=ExtResource("1_2hvkl")]
+position = Vector2(-1, -961)
 
 [node name="Barrel2" parent="." instance=ExtResource("1_2hvkl")]
-position = Vector2(-252, 633)
+position = Vector2(-250, 634)
 
 [node name="Barrel2" parent="Barrel2" instance=ExtResource("1_2hvkl")]
-position = Vector2(0, -502)
+position = Vector2(-1, -482)
+
+[node name="Barrel3" parent="Barrel2" instance=ExtResource("1_2hvkl")]
+position = Vector2(-1, 480)
