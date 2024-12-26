@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsc886pbcd1rc"]
+
+[ext_resource type="Script" path="res://assets/level/level1/bg.gd" id="1_yg5ia"]
+[ext_resource type="PackedScene" uid="uid://cvne2rbkliosj" path="res://assets/level/level1/background/bg_panel.tscn" id="2_2i2dv"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_yg5ia")
+
+[node name="bgPanel" parent="." instance=ExtResource("2_2i2dv")]
