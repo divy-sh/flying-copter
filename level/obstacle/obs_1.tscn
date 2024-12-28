@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2jmpjwe2mgj5"]
+
+[ext_resource type="PackedScene" uid="uid://b1oesi0bgmkxu" path="res://level/obstacle/barrel.tscn" id="1_2hvkl"]
+
+[node name="obs_1" type="Node2D"]
+
+[node name="Barrel" parent="." instance=ExtResource("1_2hvkl")]
+position = Vector2(100, -160)
+scale = Vector2(0.6, 0.6)
+
+[node name="Barrel2" parent="Barrel" instance=ExtResource("1_2hvkl")]
+position = Vector2(-1, -482)
+
+[node name="Barrel3" parent="Barrel" instance=ExtResource("1_2hvkl")]
+position = Vector2(-1, -961)
+
+[node name="Barrel4" parent="Barrel" instance=ExtResource("1_2hvkl")]
+position = Vector2(-1.66667, -1445)
+
+[node name="Barrel2" parent="." instance=ExtResource("1_2hvkl")]
+position = Vector2(100, 800)
+scale = Vector2(0.6, 0.6)
+
+[node name="Barrel2" parent="Barrel2" instance=ExtResource("1_2hvkl")]
+position = Vector2(-1, -482)
+
+[node name="Barrel3" parent="Barrel2" instance=ExtResource("1_2hvkl")]
+position = Vector2(-1, 480)
+
+[node name="Barrel4" parent="Barrel2" instance=ExtResource("1_2hvkl")]
+position = Vector2(-2, 960)

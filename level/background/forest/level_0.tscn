@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0walerpqg7ue"]
+
+[ext_resource type="Texture2D" uid="uid://cbw62jssel8xs" path="res://level/background/forest/forest_short.png" id="7_tnasm"]
+
+[node name="level_0" type="Node2D"]
+
+[node name="ForestShort" type="Sprite2D" parent="."]
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("7_tnasm")
+centered = false

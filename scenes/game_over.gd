@@ -1,5 +1,10 @@
 extends Node
 
 func _ready():
-	self.find_child("score").text += str(Global.save_data.current_score)
-	self.find_child("high_score").text += str(Global.save_data.high_score)
+	pass
+
+func _process(_delta):
+	if Global.game_state == 2:
+		self.visible = true
+	else:
+		self.visible = false
