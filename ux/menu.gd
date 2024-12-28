@@ -3,7 +3,7 @@ extends Node2D
 var fade_duration = 0.1
 
 func _process(_delta):
-	if Global.game_state == 0:
+	if Global.game_state == Global.GameStates.MENU:
 		modulate.a = min(modulate.a + _delta / fade_duration, 1)
 		visible = true
 	else:

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://d2jmpjwe2mgj5"]
+[gd_scene load_steps=3 format=3 uid="uid://d2jmpjwe2mgj5"]
 
 [ext_resource type="PackedScene" uid="uid://b1oesi0bgmkxu" path="res://level/obstacle/barrel.tscn" id="1_2hvkl"]
+[ext_resource type="PackedScene" uid="uid://baq8shsldkgck" path="res://level/coin/coinArea.tscn" id="2_6rv7e"]
 
 [node name="obs_1" type="Node2D"]
 
@@ -29,3 +30,6 @@ position = Vector2(-1, 480)
 
 [node name="Barrel4" parent="Barrel2" instance=ExtResource("1_2hvkl")]
 position = Vector2(-2, 960)
+
+[node name="CoinArea" parent="." instance=ExtResource("2_6rv7e")]
+position = Vector2(560, 920)

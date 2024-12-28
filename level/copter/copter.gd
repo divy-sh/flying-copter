@@ -8,7 +8,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if Global.game_state == 1:
+	if Global.game_state == Global.GameStates.PLAYING:
 		self.freeze = false
 	if position.y > 1000 or position.y < -800:
 		game_over()
@@ -18,8 +18,8 @@ func _process(_delta):
 	sprite.rotation = lerp_angle(sprite.rotation, target_rotation, 0.1)
 
 func _input(event):
-	if event.is_pressed() and Global.game_state != 2:
-		Global.game_start()
+	if event.is_pressed() and Global.game_state != Global.GameStates.OVER:
+		Global.game_playing()
 		self.linear_velocity = Vector2(0, -1300)
 
 func _integrate_forces(state):

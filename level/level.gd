@@ -9,13 +9,12 @@ var first
 var second
 
 func _ready():
-	var obstacle_path = "res://level/obstacle/obs_1.tscn"
+	var obstacle_path = "res://level/obstacle/obstacle.tscn"
 	obstacle = load(obstacle_path)
 	spawn_obstacle()
-	Global.game_init()
 	
 func _process(delta):
-	if Global.game_state == 1:
+	if Global.game_state == Global.GameStates.PLAYING:
 		process_obstacle_physics(delta)
 
 func spawn_obstacle():
@@ -38,9 +37,6 @@ func process_obstacle_physics(delta):
 		second = reset_obstacle(second)
 
 func reset_obstacle(obs):
-	Global.save_data.current_score += 1
-	if Global.save_data.current_score >= 20:
-		Global.SPEED = -700
 	remove_child(obs)
 	obs.queue_free()
 	var new_obs = obstacle.instantiate()
