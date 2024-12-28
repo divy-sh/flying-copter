@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2s7u6wc044fg"]
+
+[ext_resource type="Script" path="res://assets/level/level.gd" id="1_i4gvl"]
+[ext_resource type="PackedScene" uid="uid://bydecajk2bkxf" path="res://assets/level/background/bg.tscn" id="2_6tvdi"]
+
+[node name="trainyard" type="Node2D"]
+script = ExtResource("1_i4gvl")
+
+[node name="bg" parent="." instance=ExtResource("2_6tvdi")]

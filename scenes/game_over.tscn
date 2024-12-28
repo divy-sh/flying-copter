@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://knccs74drbc2"]
+[gd_scene load_steps=6 format=3 uid="uid://knccs74drbc2"]
 
 [ext_resource type="PackedScene" uid="uid://y5qgnqu6q2bx" path="res://assets/ui/Home/home.tscn" id="2_p3bdj"]
 [ext_resource type="PackedScene" uid="uid://cnf63u2022kr8" path="res://assets/ui/Repeat/retry.tscn" id="3_edt0w"]
 [ext_resource type="FontFile" uid="uid://willmtt73lyj" path="res://assets/ui/toxigenesis bd.otf" id="3_yksrr"]
 [ext_resource type="Script" path="res://scenes/game_over.gd" id="4_fs4et"]
+[ext_resource type="PackedScene" uid="uid://bydecajk2bkxf" path="res://assets/level/background/bg.tscn" id="5_tl18c"]
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -74,3 +75,5 @@ theme_override_font_sizes/font_size = 60
 text = "HIGH SCORE : "
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="bg" parent="." instance=ExtResource("5_tl18c")]
