@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvg2b2sapbl70"]
+
+[ext_resource type="Script" path="res://ux/menu.gd" id="1_j4syk"]
+[ext_resource type="FontFile" uid="uid://bdl2dgv4b7dt0" path="res://ux/joystix.otf" id="1_r65bs"]
+
+[node name="menu" type="Node2D"]
+z_index = 1
+script = ExtResource("1_j4syk")
+
+[node name="Flappy Copter" type="RichTextLabel" parent="."]
+offset_left = 33.0
+offset_top = 349.0
+offset_right = 1447.0
+offset_bottom = 493.0
+theme_override_fonts/normal_font = ExtResource("1_r65bs")
+theme_override_font_sizes/normal_font_size = 96
+text = "FLAPPY COPTER"
+fit_content = true
+
+[node name="Flappy Copter2" type="RichTextLabel" parent="."]
+offset_left = 325.0
+offset_top = 1369.0
+offset_right = 1739.0
+offset_bottom = 1513.0
+theme_override_fonts/normal_font = ExtResource("1_r65bs")
+theme_override_font_sizes/normal_font_size = 120
+text = "PLAY"
+fit_content = true

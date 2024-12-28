@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://b8aiu77xk5vx"]
+
+[ext_resource type="PackedScene" uid="uid://b30323hb3ua76" path="res://copter/copter.tscn" id="1_f525f"]
+[ext_resource type="Script" path="res://main.gd" id="1_td3ms"]
+[ext_resource type="PackedScene" uid="uid://culi3om4tyr0g" path="res://ux/game_over.tscn" id="3_1u38l"]
+[ext_resource type="PackedScene" uid="uid://cvg2b2sapbl70" path="res://ux/menu.tscn" id="4_pihm5"]
+[ext_resource type="PackedScene" uid="uid://8olmyge6rf8j" path="res://ux/score.tscn" id="5_tebrm"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_td3ms")
+
+[node name="copter" parent="." instance=ExtResource("1_f525f")]
+top_level = true
+position = Vector2(300, 160)
+
+[node name="game_over" parent="." instance=ExtResource("3_1u38l")]
+z_index = 1
+
+[node name="menu" parent="." instance=ExtResource("4_pihm5")]
+
+[node name="game_over2" parent="." instance=ExtResource("5_tebrm")]

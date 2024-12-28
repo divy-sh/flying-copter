@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://culi3om4tyr0g"]
+
+[ext_resource type="Script" path="res://ux/game_over.gd" id="1_ed40b"]
+[ext_resource type="FontFile" uid="uid://bdl2dgv4b7dt0" path="res://ux/joystix.otf" id="3_y8q6e"]
+
+[node name="game_over" type="Node2D"]
+script = ExtResource("1_ed40b")
+
+[node name="GameOver" type="RichTextLabel" parent="."]
+offset_left = 80.0
+offset_top = 400.0
+offset_right = 1008.0
+offset_bottom = 724.0
+theme_override_fonts/normal_font = ExtResource("3_y8q6e")
+theme_override_font_sizes/normal_font_size = 120
+text = "GAME OVER"
+fit_content = true
+scroll_active = false
+
+[node name="restart" type="Button" parent="."]
+offset_left = 240.0
+offset_top = 800.0
+offset_right = 814.0
+offset_bottom = 928.0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("3_y8q6e")
+theme_override_font_sizes/font_size = 80
+text = "restart"
+flat = true
+
+[node name="highScores" type="Button" parent="."]
+offset_left = 80.0
+offset_top = 1000.0
+offset_right = 1001.0
+offset_bottom = 1128.0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("3_y8q6e")
+theme_override_font_sizes/font_size = 80
+text = "high scores"
+flat = true
