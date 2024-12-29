@@ -7,6 +7,8 @@ func _ready():
 	play_button.pressed.connect(_play_pressed)
 	var high_scores = $highScores
 	high_scores.pressed.connect(_high_score_pressed)
+	var unlocks = $unlocks
+	unlocks.pressed.connect(_unlocks_pressed)
 
 func _process(_delta):
 	if Global.game_state == Global.GameStates.MENU:
@@ -22,3 +24,6 @@ func _play_pressed():
 
 func _high_score_pressed():
 	Global.high_score()
+
+func _unlocks_pressed():
+	Global.unlocks()

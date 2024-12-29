@@ -7,15 +7,15 @@ var second = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for i in range(7):
-		var level = "res://background/forest/level_%s.tscn" % i
+	for i in range(Global.save_data.level.layerCount):
+		var level = "res://background/%s/level_%s.tscn" % [Global.save_data.level.name, i]
 		bgs.append(load(level))
 		spawn_bg(bgs[i], i)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	for i in range(7):
+	for i in range(Global.save_data.level.layerCount):
 		process_bg_physics(delta, bgs[i], i)
 
 func spawn_bg(bg, i):

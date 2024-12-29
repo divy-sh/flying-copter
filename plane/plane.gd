@@ -5,6 +5,9 @@ func _ready():
 	Global.load()
 	Global.current_score = 0
 	self.freeze = true
+	var sprite = $sprite
+	sprite.texture = load("res://plane/planes/" + 
+		Global.save_data.vehicle.name + ".png")
 
 func _process(_delta):
 	if Global.game_state == Global.GameStates.PLAYING:
@@ -39,8 +42,8 @@ func show_explosion():
 	var explosion = $Explosion
 	explosion.visible = true
 	explosion.play("explosion")
-	if not explosion.is_connected("animation_finished", queue_free):
-		explosion.connect("animation_finished", queue_free)
+	await explosion.animation_finished
+	queue_free()
 
 func game_over():
 	show_explosion()

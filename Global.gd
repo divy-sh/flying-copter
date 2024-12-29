@@ -5,22 +5,48 @@ enum GameStates {
 	IDLE,
 	PLAYING,
 	OVER,
-	HIGHSCORE
+	HIGHSCORE,
+	UNLOCK
 }
 
-enum Levels {
-	forest,
+var Levels = {
+	forest = {
+		name = "forest",
+		unlocked = true,
+		cost = 0,
+		layerCount = 7
+	},
+	desert = {
+		name = "desert",
+		unlocked = false,
+		cost = 500,
+		layerCount = 6
+	},
+	skies = {
+		name = "skies",
+		unlocked = false,
+		cost = 1000
+	},
+	moon = {
+		name = "moon",
+		unlocked = false,
+		cost = 5000
+	},
 }
 
-enum Vehicles {
-	copter,
+var Vehicles = {
+	plane_1_blue = {
+		name = "plane_1_blue",
+		unlocked = true,
+		cost = 0
+	},
 }
 
 var default_save_data = {
 	"high_score" = [],
 	"coins" = 0,
 	"level" = Levels.forest,
-	"vehicle" = Vehicles.copter,
+	"vehicle" = Vehicles.plane_1_blue,
 }
 
 var save_data = {}
@@ -32,13 +58,15 @@ var game_state = GameStates.MENU
 func save():
 	save_data.coins += current_score
 	var time = Time.get_datetime_dict_from_system()
-	if len(save_data.high_score) < 10:
+	if len(save_data.high_score) < 10 and current_score > 0:
 		save_data.high_score.append([current_score, 
-		str(time.year) + "-" + str(time.month) + "-" + str(time.day)])
-	elif save_data.high_score[-1][0] < current_score:
+		str(time.year) + "/" + str(time.month) + "/" + str(time.day)])
+		save_data.high_score.sort()
+		save_data.high_score.reverse()
+	elif save_data.high_score and save_data.high_score[-1][0] < current_score:
 		save_data.high_score.pop_back()
 		save_data.high_score.append([current_score, 
-		str(time.year) + "-" + str(time.month) + "-" + str(time.day)])
+		str(time.year) + "/" + str(time.month) + "/" + str(time.day)])
 		save_data.high_score.sort()
 		save_data.high_score.reverse()
 	
@@ -57,13 +85,10 @@ func load():
 func game_over():
 	SPEED = 0
 	game_state = GameStates.OVER
-	
+
 func game_idle():
 	SPEED = -500
 	game_state = GameStates.IDLE
-	
-func game_playing():
-	game_state = GameStates.PLAYING
 
 func main_menu():
 	SPEED = -500
@@ -72,3 +97,10 @@ func main_menu():
 func high_score():
 	SPEED = 0
 	game_state = GameStates.HIGHSCORE
+
+func unlocks():
+	SPEED = 0
+	game_state = GameStates.UNLOCK
+
+func game_playing():
+	game_state = GameStates.PLAYING

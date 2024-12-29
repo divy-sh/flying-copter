@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://sjb4slyn5us5"]
+
+[ext_resource type="FontFile" uid="uid://bdl2dgv4b7dt0" path="res://ux/joystix.otf" id="2_0x1rm"]
+[ext_resource type="Script" path="res://ux/unlock/unlock.gd" id="3_fo4fc"]
+
+[node name="unlocks" type="Node2D"]
+z_index = 1
+script = ExtResource("3_fo4fc")
+
+[node name="unlocks" type="RichTextLabel" parent="."]
+offset_top = 240.0
+offset_right = 1080.0
+offset_bottom = 384.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/normal_font = ExtResource("2_0x1rm")
+theme_override_font_sizes/normal_font_size = 90
+bbcode_enabled = true
+text = "[center]unlocks[/center]"
+fit_content = true
+scroll_active = false
+
+[node name="mainMenu" type="Button" parent="."]
+offset_top = 1600.0
+offset_right = 1080.0
+offset_bottom = 1700.0
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_0x1rm")
+theme_override_font_sizes/font_size = 64
+text = "back"
+flat = true

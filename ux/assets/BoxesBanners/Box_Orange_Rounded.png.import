@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxosoia6l8kds"
-path="res://.godot/imported/explosion.png-0ac93b4a2d691743e2f29d8d186e9c60.ctex"
+uid="uid://dhbk2oarmmc26"
+path="res://.godot/imported/Box_Orange_Rounded.png-488df1255b07b9b5fb6845b4950458db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://copter/explosion/explosion.png"
-dest_files=["res://.godot/imported/explosion.png-0ac93b4a2d691743e2f29d8d186e9c60.ctex"]
+source_file="res://ux/assets/BoxesBanners/Box_Orange_Rounded.png"
+dest_files=["res://.godot/imported/Box_Orange_Rounded.png-488df1255b07b9b5fb6845b4950458db.ctex"]
 
 [params]
 

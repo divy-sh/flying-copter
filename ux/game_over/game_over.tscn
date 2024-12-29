@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://culi3om4tyr0g"]
 
-[ext_resource type="Script" path="res://ux/game_over.gd" id="1_ed40b"]
+[ext_resource type="Script" path="res://ux/game_over/game_over.gd" id="1_ed40b"]
 [ext_resource type="FontFile" uid="uid://bdl2dgv4b7dt0" path="res://ux/joystix.otf" id="3_y8q6e"]
 
 [node name="game_over" type="Node2D"]
@@ -10,8 +10,10 @@ script = ExtResource("1_ed40b")
 offset_top = 240.0
 offset_right = 1080.0
 offset_bottom = 384.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
 theme_override_fonts/normal_font = ExtResource("3_y8q6e")
-theme_override_font_sizes/normal_font_size = 86
+theme_override_font_sizes/normal_font_size = 90
 bbcode_enabled = true
 text = "[center] GAME OVER [center]"
 fit_content = true
@@ -20,19 +22,23 @@ scroll_active = false
 [node name="restart" type="Button" parent="."]
 offset_top = 1400.0
 offset_right = 1080.0
-offset_bottom = 1528.0
+offset_bottom = 1500.0
 focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("3_y8q6e")
-theme_override_font_sizes/font_size = 80
+theme_override_font_sizes/font_size = 64
 text = "restart"
 flat = true
 
 [node name="mainMenu" type="Button" parent="."]
 offset_top = 1200.0
 offset_right = 1080.0
-offset_bottom = 1328.0
+offset_bottom = 1300.0
 focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("3_y8q6e")
-theme_override_font_sizes/font_size = 80
+theme_override_font_sizes/font_size = 64
 text = "Main Menu"
 flat = true

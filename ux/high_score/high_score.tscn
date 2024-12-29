@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://d18ihnjuj4f3l"]
+
+[ext_resource type="Script" path="res://ux/high_score/high_score.gd" id="1_ue37i"]
+[ext_resource type="FontFile" uid="uid://bdl2dgv4b7dt0" path="res://ux/joystix.otf" id="2_kwawh"]
+[ext_resource type="Texture2D" uid="uid://dhbk2oarmmc26" path="res://ux/assets/BoxesBanners/Box_Orange_Rounded.png" id="3_d4o2d"]
+
+[node name="high_score" type="Node2D"]
+z_index = 1
+script = ExtResource("1_ue37i")
+
+[node name="HighScores" type="RichTextLabel" parent="."]
+offset_top = 240.0
+offset_right = 1080.0
+offset_bottom = 384.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/normal_font = ExtResource("2_kwawh")
+theme_override_font_sizes/normal_font_size = 90
+bbcode_enabled = true
+text = "[center]high scores[/center]"
+fit_content = true
+scroll_active = false
+
+[node name="scores" type="RichTextLabel" parent="."]
+z_index = 2
+offset_left = 120.0
+offset_top = 540.0
+offset_right = 960.0
+offset_bottom = 1240.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/normal_font = ExtResource("2_kwawh")
+theme_override_font_sizes/normal_font_size = 54
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+
+[node name="mainMenu" type="Button" parent="."]
+offset_top = 1600.0
+offset_right = 1080.0
+offset_bottom = 1700.0
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_kwawh")
+theme_override_font_sizes/font_size = 64
+text = "back"
+flat = true
+
+[node name="BoxOrangeSquare" type="Sprite2D" parent="."]
+position = Vector2(540, 900)
+scale = Vector2(0.66, 0.627097)
+texture = ExtResource("3_d4o2d")

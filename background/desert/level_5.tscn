@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1detbl06okpp"]
+
+[ext_resource type="Texture2D" uid="uid://dfctxwi27maon" path="res://background/desert/desert_sky.png" id="6_myfqb"]
+
+[node name="level_0" type="Node2D"]
+
+[node name="DesertSky" type="Sprite2D" parent="."]
+z_index = -5
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("6_myfqb")
+centered = false

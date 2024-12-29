@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://gy8fvonwmu3s"]
+
+[ext_resource type="Texture2D" uid="uid://reel73c2027e" path="res://background/desert/desert_dunefrontt.png" id="2_1jn8v"]
+
+[node name="level_0" type="Node2D"]
+
+[node name="DesertDunefrontt" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("2_1jn8v")
+centered = false
