@@ -8,21 +8,42 @@ z_index = 1
 script = ExtResource("1_j4syk")
 
 [node name="Flappy Copter" type="RichTextLabel" parent="."]
-offset_left = 33.0
-offset_top = 349.0
-offset_right = 1447.0
-offset_bottom = 493.0
+offset_top = 240.0
+offset_right = 1080.0
+offset_bottom = 336.0
 theme_override_fonts/normal_font = ExtResource("1_r65bs")
-theme_override_font_sizes/normal_font_size = 96
-text = "FLAPPY COPTER"
+theme_override_font_sizes/normal_font_size = 86
+bbcode_enabled = true
+text = "[center] FLAPPY COPTER [/center]"
 fit_content = true
 
-[node name="Flappy Copter2" type="RichTextLabel" parent="."]
-offset_left = 325.0
-offset_top = 1369.0
-offset_right = 1739.0
-offset_bottom = 1513.0
-theme_override_fonts/normal_font = ExtResource("1_r65bs")
-theme_override_font_sizes/normal_font_size = 120
+[node name="play" type="Button" parent="."]
+offset_top = 1200.0
+offset_right = 1080.0
+offset_bottom = 1280.0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("1_r65bs")
+theme_override_font_sizes/font_size = 80
 text = "PLAY"
-fit_content = true
+flat = true
+
+[node name="unlocks" type="Button" parent="."]
+offset_top = 1600.0
+offset_right = 1080.0
+offset_bottom = 1704.0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("1_r65bs")
+theme_override_font_sizes/font_size = 80
+text = "unlocks
+"
+flat = true
+
+[node name="highScores" type="Button" parent="."]
+offset_top = 1400.0
+offset_right = 1080.0
+offset_bottom = 1504.0
+focus_mode = 0
+theme_override_fonts/font = ExtResource("1_r65bs")
+theme_override_font_sizes/font_size = 80
+text = "high scores"
+flat = true

@@ -9,7 +9,7 @@ var first
 var second
 
 func _ready():
-	var obstacle_path = "res://level/obstacle/obstacle.tscn"
+	var obstacle_path = "res://obstacle/obstacle.tscn"
 	obstacle = load(obstacle_path)
 	spawn_obstacle()
 	

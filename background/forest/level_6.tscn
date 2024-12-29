@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://oax0wtvwnmvr"]
+
+[ext_resource type="Texture2D" uid="uid://bio4mro7ebjq3" path="res://background/forest/forest_moon.png" id="5_sbbh1"]
+
+[node name="level_0" type="Node2D"]
+
+[node name="ForestMoon" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("5_sbbh1")
+centered = false

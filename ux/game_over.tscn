@@ -7,21 +7,20 @@
 script = ExtResource("1_ed40b")
 
 [node name="GameOver" type="RichTextLabel" parent="."]
-offset_left = 80.0
-offset_top = 400.0
-offset_right = 1008.0
-offset_bottom = 724.0
+offset_top = 240.0
+offset_right = 1080.0
+offset_bottom = 384.0
 theme_override_fonts/normal_font = ExtResource("3_y8q6e")
-theme_override_font_sizes/normal_font_size = 120
-text = "GAME OVER"
+theme_override_font_sizes/normal_font_size = 86
+bbcode_enabled = true
+text = "[center] GAME OVER [center]"
 fit_content = true
 scroll_active = false
 
 [node name="restart" type="Button" parent="."]
-offset_left = 240.0
-offset_top = 800.0
-offset_right = 814.0
-offset_bottom = 928.0
+offset_top = 1400.0
+offset_right = 1080.0
+offset_bottom = 1528.0
 focus_mode = 0
 theme_override_fonts/font = ExtResource("3_y8q6e")
 theme_override_font_sizes/font_size = 80
@@ -29,23 +28,11 @@ text = "restart"
 flat = true
 
 [node name="mainMenu" type="Button" parent="."]
-offset_left = 80.0
-offset_top = 1000.0
-offset_right = 1001.0
-offset_bottom = 1128.0
-focus_mode = 0
-theme_override_fonts/font = ExtResource("3_y8q6e")
-theme_override_font_sizes/font_size = 80
-text = "Main Menu"
-flat = true
-
-[node name="highScores" type="Button" parent="."]
-offset_left = 80.0
 offset_top = 1200.0
-offset_right = 1001.0
+offset_right = 1080.0
 offset_bottom = 1328.0
 focus_mode = 0
 theme_override_fonts/font = ExtResource("3_y8q6e")
 theme_override_font_sizes/font_size = 80
-text = "high scores"
+text = "Main Menu"
 flat = true

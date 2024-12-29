@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=3 uid="uid://cl11dkob1ilac"]
+
+[ext_resource type="Texture2D" uid="uid://cxosoia6l8kds" path="res://copter/explosion/explosion.png" id="1_3a2sa"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6ylt"]
+atlas = ExtResource("1_3a2sa")
+region = Rect2(0, 0, 595, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xythn"]
+atlas = ExtResource("1_3a2sa")
+region = Rect2(595, 0, 595, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wlsar"]
+atlas = ExtResource("1_3a2sa")
+region = Rect2(1190, 0, 595, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjp07"]
+atlas = ExtResource("1_3a2sa")
+region = Rect2(0, 512, 595, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1q1td"]
+atlas = ExtResource("1_3a2sa")
+region = Rect2(595, 512, 595, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdpi2"]
+atlas = ExtResource("1_3a2sa")
+region = Rect2(1190, 512, 595, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijdv1"]
+atlas = ExtResource("1_3a2sa")
+region = Rect2(0, 1024, 595, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f85nm"]
+atlas = ExtResource("1_3a2sa")
+region = Rect2(595, 1024, 595, 512)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2srqb"]
+atlas = ExtResource("1_3a2sa")
+region = Rect2(1190, 1024, 595, 512)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vt07t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6ylt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xythn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wlsar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tjp07")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1q1td")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdpi2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ijdv1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f85nm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2srqb")
+}],
+"loop": false,
+"name": &"explosion",
+"speed": 18.0
+}]
+
+[node name="Explosion" type="AnimatedSprite2D"]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_vt07t")
+animation = &"explosion"
+autoplay = "default"
+frame = 8
+frame_progress = 1.0
