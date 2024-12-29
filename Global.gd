@@ -45,7 +45,7 @@ var Vehicles = {
 var default_save_data = {
 	"high_score" = [],
 	"coins" = 0,
-	"level" = Levels.forest,
+	"level" = Levels.desert,
 	"vehicle" = Vehicles.plane_1_blue,
 }
 

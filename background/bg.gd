@@ -1,6 +1,5 @@
 extends Node
 
-var SPAWN_OFFSET = 3030
 var bgs = []
 var first = []
 var second = []
@@ -22,6 +21,7 @@ func spawn_bg(bg, i):
 	first.append(bg.instantiate())
 	first[i].position = Vector2(0, 0)
 	second.append(bg.instantiate())
+	var SPAWN_OFFSET = first[i].get_child(0).texture.get_width() * first[i].get_child(0).scale.x - 10
 	second[i].position = Vector2(SPAWN_OFFSET, 0)
 	add_child(first[i])
 	add_child(second[i])
@@ -32,12 +32,14 @@ func process_bg_physics(delta, bg, i):
 	if second[i] and second[i] is Node2D:
 		second[i].position += Vector2(Global.SPEED * (0.8 - 0.1 * i), 0) * delta
 	
+	var SPAWN_OFFSET = first[i].get_child(0).texture.get_width() * first[i].get_child(0).scale.x - 10
 	if first[i].position.x < -SPAWN_OFFSET:
 		first[i] = reset_bg(first[i], bg)
 	if second[i].position.x < -SPAWN_OFFSET:
 		second[i] = reset_bg(second[i], bg)
 
 func reset_bg(obs, bg):
+	var SPAWN_OFFSET = obs.get_child(0).texture.get_width() * obs.get_child(0).scale.x - 10
 	remove_child(obs)
 	obs.queue_free()
 	var new_bg = bg.instantiate()
