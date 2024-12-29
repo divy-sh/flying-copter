@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://sjb4slyn5us5"]
+[gd_scene load_steps=6 format=3 uid="uid://sjb4slyn5us5"]
 
 [ext_resource type="FontFile" uid="uid://bdl2dgv4b7dt0" path="res://ux/joystix.otf" id="2_0x1rm"]
 [ext_resource type="Script" path="res://ux/unlock/unlock.gd" id="3_fo4fc"]
+[ext_resource type="Texture2D" uid="uid://dhbk2oarmmc26" path="res://ux/assets/BoxesBanners/Box_Orange_Rounded.png" id="3_r8oga"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4jhrm"]
+size = Vector2(372, 464)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xm00d"]
+size = Vector2(370, 468)
 
 [node name="unlocks" type="Node2D"]
 z_index = 1
@@ -31,3 +38,59 @@ theme_override_fonts/font = ExtResource("2_0x1rm")
 theme_override_font_sizes/font_size = 64
 text = "back"
 flat = true
+
+[node name="Planes" type="Area2D" parent="."]
+
+[node name="Planes" type="Sprite2D" parent="Planes"]
+position = Vector2(100, 900)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_r8oga")
+centered = false
+
+[node name="unlocks2" type="RichTextLabel" parent="Planes"]
+offset_left = 80.0
+offset_top = 1300.0
+offset_right = 480.0
+offset_bottom = 1358.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/normal_font = ExtResource("2_0x1rm")
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[center]planes
+[/center]"
+fit_content = true
+scroll_active = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Planes"]
+position = Vector2(289, 1136)
+shape = SubResource("RectangleShape2D_4jhrm")
+
+[node name="Levels" type="Area2D" parent="."]
+
+[node name="Levels" type="Sprite2D" parent="Levels"]
+position = Vector2(600, 900)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("3_r8oga")
+centered = false
+
+[node name="unlocks3" type="RichTextLabel" parent="Levels"]
+offset_left = 580.0
+offset_top = 1300.0
+offset_right = 980.0
+offset_bottom = 1358.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/normal_font = ExtResource("2_0x1rm")
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[center]levels[/center]"
+fit_content = true
+scroll_active = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Levels"]
+position = Vector2(788, 1132)
+shape = SubResource("RectangleShape2D_xm00d")
+
+[connection signal="input_event" from="Planes" to="." method="_on_planes_input_event"]
+[connection signal="input_event" from="Levels" to="." method="_on_levels_input_event"]
