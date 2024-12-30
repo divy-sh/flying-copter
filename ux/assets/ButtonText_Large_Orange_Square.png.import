@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhbk2oarmmc26"
-path="res://.godot/imported/Box_Orange_Rounded.png-488df1255b07b9b5fb6845b4950458db.ctex"
+uid="uid://b835eputvqsxp"
+path="res://.godot/imported/ButtonText_Large_Orange_Square.png-6e6b5512c403e3fce6c23c83cd688d3d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ux/assets/BoxesBanners/Box_Orange_Rounded.png"
-dest_files=["res://.godot/imported/Box_Orange_Rounded.png-488df1255b07b9b5fb6845b4950458db.ctex"]
+source_file="res://ux/assets/ButtonText_Large_Orange_Square.png"
+dest_files=["res://.godot/imported/ButtonText_Large_Orange_Square.png-6e6b5512c403e3fce6c23c83cd688d3d.ctex"]
 
 [params]
 

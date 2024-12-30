@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://5wh536phtmuf"]
+
+[ext_resource type="Texture2D" uid="uid://d1h542dcirkuk" path="res://background/skies/sky_clouds.png" id="6_clsku"]
+
+[node name="level_0" type="Node2D"]
+
+[node name="SkyClouds" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(2, 2)
+texture = ExtResource("6_clsku")
+centered = false

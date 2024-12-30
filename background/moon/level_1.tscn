@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5mj3wgds777s"]
+
+[ext_resource type="Texture2D" uid="uid://dc2bwgwrmxur8" path="res://background/moon/moon_front.png" id="2_3uydn"]
+
+[node name="level_0" type="Node2D"]
+
+[node name="MoonFront" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(2, 2)
+texture = ExtResource("2_3uydn")
+centered = false

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bc8gtmm8vaqro"]
+
+[ext_resource type="Texture2D" uid="uid://b2qt2p05qxep3" path="res://background/moon/moon_earth.png" id="5_aipgc"]
+
+[node name="level_0" type="Node2D"]
+
+[node name="MoonEarth" type="Sprite2D" parent="."]
+z_index = -4
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(2, 2)
+texture = ExtResource("5_aipgc")
+centered = false

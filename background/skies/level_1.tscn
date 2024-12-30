@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhsvts8dwtcdc"]
+
+[ext_resource type="Texture2D" uid="uid://tngij3g1e5jv" path="res://background/skies/sky_cloud_floor_2.png" id="2_myt78"]
+
+[node name="level_0" type="Node2D"]
+
+[node name="SkyCloudFloor2" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(2, 2)
+texture = ExtResource("2_myt78")
+centered = false

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://s6k81yqw0ggr"]
+
+[ext_resource type="Texture2D" uid="uid://byfhgs4rjwsgu" path="res://background/moon/moon_floor.png" id="3_pdfix"]
+
+[node name="level_0" type="Node2D"]
+
+[node name="MoonFloor" type="Sprite2D" parent="."]
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(2, 2)
+texture = ExtResource("3_pdfix")
+centered = false

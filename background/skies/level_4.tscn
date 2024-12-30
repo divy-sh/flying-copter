@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dax8lym4wwx28"]
+
+[ext_resource type="Texture2D" uid="uid://c2hhhlctqg1fi" path="res://background/skies/sky_front_mountain.png" id="5_q487b"]
+
+[node name="level_0" type="Node2D"]
+
+[node name="SkyFrontMountain" type="Sprite2D" parent="."]
+z_index = -4
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(2, 2)
+texture = ExtResource("5_q487b")
+centered = false

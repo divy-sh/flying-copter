@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1qjaqq5srtnp"]
+
+[ext_resource type="Texture2D" uid="uid://w18g2kchk5g7" path="res://background/moon/moon_sky.png" id="6_5m65v"]
+
+[node name="level_0" type="Node2D"]
+
+[node name="MoonSky" type="Sprite2D" parent="."]
+z_index = -5
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(2, 2)
+texture = ExtResource("6_5m65v")
+centered = false

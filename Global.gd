@@ -27,12 +27,14 @@ var Levels = {
 	skies = {
 		name = "skies",
 		unlocked = false,
-		cost = 1000
+		cost = 1000,
+		layerCount = 9
 	},
 	moon = {
 		name = "moon",
 		unlocked = false,
-		cost = 5000
+		cost = 5000,
+		layerCount = 6
 	},
 }
 
@@ -114,7 +116,7 @@ var Vehicles = {
 var default_save_data = {
 	"high_score" = [],
 	"coins" = 0,
-	"level" = Levels.desert,
+	"level" = Levels.moon,
 	"vehicle" = Vehicles.plane_1_blue,
 	"levels" = Levels,
 	"vehicles" = Vehicles,
