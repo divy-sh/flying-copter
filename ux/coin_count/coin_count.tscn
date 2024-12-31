@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8onflqa3p5wa"]
+
+[ext_resource type="Script" path="res://ux/coin_count/coin_count.gd" id="1_xp2p6"]
+[ext_resource type="FontFile" uid="uid://bdl2dgv4b7dt0" path="res://ux/joystix.otf" id="2_ijfck"]
+[ext_resource type="PackedScene" uid="uid://bmtmb6os04u7c" path="res://coin/coin.tscn" id="3_sgcro"]
+
+[node name="coin_count" type="Node2D"]
+script = ExtResource("1_xp2p6")
+
+[node name="coin_count_text" type="RichTextLabel" parent="."]
+z_index = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 146.0
+offset_top = 82.0
+offset_right = 906.0
+offset_bottom = 226.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/normal_font = ExtResource("2_ijfck")
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "0"
+fit_content = true
+scroll_active = false
+
+[node name="Coin" parent="." instance=ExtResource("3_sgcro")]
+z_index = 1
+position = Vector2(80, 120)
+scale = Vector2(6, 6)
+autoplay = ""

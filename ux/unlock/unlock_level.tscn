@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://b56mf8yceglm8"]
+[gd_scene load_steps=3 format=3 uid="uid://b56mf8yceglm8"]
 
 [ext_resource type="Script" path="res://ux/unlock/unlock_level.gd" id="1_k8070"]
 [ext_resource type="FontFile" uid="uid://bdl2dgv4b7dt0" path="res://ux/joystix.otf" id="2_arpxd"]
-[ext_resource type="PackedScene" uid="uid://ylo0auuj2yh" path="res://ux/unlock/selectable.tscn" id="3_d8q5e"]
 
 [node name="unlocks" type="Node2D"]
 z_index = 1
@@ -42,6 +41,3 @@ offset_bottom = 1580.0
 [node name="GridContainer" type="GridContainer" parent="levels"]
 layout_mode = 2
 columns = 2
-
-[node name="selectable" parent="levels/GridContainer" instance=ExtResource("3_d8q5e")]
-layout_mode = 2

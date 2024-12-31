@@ -42,7 +42,7 @@ var Vehicles = {
 	plane_1_blue = {
 		name = "plane_1_blue",
 		title = "Dingo Blue",
-		unlocked = false,
+		unlocked = true,
 		cost = 0
 	},
 	plane_1_pink = {
@@ -116,7 +116,7 @@ var Vehicles = {
 var default_save_data = {
 	"high_score" = [],
 	"coins" = 0,
-	"level" = Levels.moon,
+	"level" = Levels.forest,
 	"vehicle" = Vehicles.plane_1_blue,
 	"levels" = Levels,
 	"vehicles" = Vehicles,

@@ -21,7 +21,7 @@ offset_bottom = 450.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_ik0h1")
-theme_override_font_sizes/font_size = 50
+theme_override_font_sizes/font_size = 40
 flat = true
 icon_alignment = 1
 expand_icon = true
@@ -42,9 +42,15 @@ offset_bottom = 340.0
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
 theme_override_fonts/normal_font = ExtResource("2_ik0h1")
-theme_override_font_sizes/normal_font_size = 50
+theme_override_font_sizes/normal_font_size = 40
 bbcode_enabled = true
 
-[node name="image" type="Sprite2D" parent="."]
+[node name="image" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 47.0
+offset_right = 424.0
+offset_bottom = 259.0
+expand_mode = 5
 
 [connection signal="pressed" from="unlock" to="." method="_on_unlock_pressed"]
