@@ -2,23 +2,10 @@ extends Node2D
 
 var fade_duration = 0.1
 
-var level_list = []
-
 func _ready():
 	var back_button = $back
 	back_button.pressed.connect(_back_button_pressed)
-	var levels = $levels/VBoxContainer
-	var selectable = preload("res://ux/unlock/selectable.tscn")
-	var i = 0
-	for l in Global.save_data.levels:
-		var level = selectable.instantiate()
-		level.position = Vector2(0 , 0 + 350 * i)
-		level.find_child("name").text = Global.save_data.levels[l].name
-		level.find_child("cost").text = str(Global.save_data.levels[l].cost)
-		i += 1
-		print(level.position)
-		levels.add_child(level)
-		level_list.append(level)
+	populate_list()
 
 func _process(_delta):
 	if Global.game_state == Global.GameStates.UNLOCK_LEVELS:
@@ -31,3 +18,22 @@ func _process(_delta):
 
 func _back_button_pressed():
 	Global.unlocks()
+
+func populate_list():
+	var levels = $levels/GridContainer
+	var selectable_preload = preload("res://ux/unlock/selectable.tscn")
+	for l in Global.save_data.levels:
+		var selectable = selectable_preload.instantiate()
+		selectable.find_child("name").text = "[center]%s[/center]" % Global.save_data.levels[l].name
+		if Global.save_data.levels[l].unlocked == false:
+			selectable.find_child("unlock").text = str(Global.save_data.levels[l].cost)
+		else:
+			selectable.find_child("unlock").text = "Unlocked"
+		selectable.find_child("image").texture = load("res://background/" + 
+		Global.save_data.levels[l].name + "/logo.png")
+		
+		selectable.selectableName = l
+		selectable.type = "level"
+		levels.add_child(selectable)
+	
+	levels.queue_sort()
