@@ -24,3 +24,6 @@ func _process(_delta):
 		modulate.a = max(modulate.a - _delta / fade_duration, 0)
 		if modulate.a == 0:
 			visible = false
+
+	var score = $score
+	score.text = "[center]score: %s[center]" % Global.current_score
