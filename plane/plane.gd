@@ -47,5 +47,5 @@ func show_explosion():
 
 func game_over():
 	show_explosion()
-	Global.save()
+	Global.show_game_over()
 	Global.game_over()

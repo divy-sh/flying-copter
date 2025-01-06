@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://ilogntt6hpn2"]
+
+[ext_resource type="Script" path="res://ux/game_over/game_over_high_score.gd" id="1_hj0ua"]
+[ext_resource type="FontFile" uid="uid://bdl2dgv4b7dt0" path="res://ux/joystix.otf" id="2_dj050"]
+
+[node name="game_over" type="Node2D"]
+script = ExtResource("1_hj0ua")
+
+[node name="GameOver" type="RichTextLabel" parent="."]
+offset_top = 240.0
+offset_right = 1080.0
+offset_bottom = 384.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/normal_font = ExtResource("2_dj050")
+theme_override_font_sizes/normal_font_size = 90
+bbcode_enabled = true
+text = "[center]GAME OVER[center]"
+fit_content = true
+scroll_active = false
+
+[node name="score" type="RichTextLabel" parent="."]
+offset_top = 600.0
+offset_right = 1080.0
+offset_bottom = 672.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/normal_font = ExtResource("2_dj050")
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+text = "[center]high score: 0[center]"
+fit_content = true
+scroll_active = false
+
+[node name="save" type="Button" parent="."]
+offset_top = 1400.0
+offset_right = 1080.0
+offset_bottom = 1500.0
+focus_mode = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_dj050")
+theme_override_font_sizes/font_size = 64
+text = "save"
+flat = true
+
+[node name="name" type="TextEdit" parent="."]
+offset_left = 60.0
+offset_top = 960.0
+offset_right = 1020.0
+offset_bottom = 1160.0

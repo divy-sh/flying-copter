@@ -128,6 +128,9 @@ var SPEED = -500
 var current_score = 0
 var game_state = GameStates.MENU
 
+func show_game_over():
+	save()
+
 func save():
 	save_data.coins += current_score
 	var time = Time.get_datetime_dict_from_system()
