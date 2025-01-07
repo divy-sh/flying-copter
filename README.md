@@ -10,7 +10,7 @@
 - Simple and intuitive controls
 
 ## Requirements
-- Godot Engine 3.x or later
+- Godot Engine 4.x or later
 
 ## Installation
 1. Clone the repository:
