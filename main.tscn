@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b8aiu77xk5vx"]
+[gd_scene load_steps=12 format=3 uid="uid://b8aiu77xk5vx"]
 
 [ext_resource type="PackedScene" uid="uid://b30323hb3ua76" path="res://plane/plane.tscn" id="1_f525f"]
 [ext_resource type="Script" path="res://main.gd" id="1_td3ms"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b56mf8yceglm8" path="res://ux/unlock/unlock_level.tscn" id="8_6865l"]
 [ext_resource type="PackedScene" uid="uid://dvvdwchrvsoqr" path="res://ux/unlock/unlock_plane.tscn" id="9_54eo0"]
 [ext_resource type="PackedScene" uid="uid://b8onflqa3p5wa" path="res://ux/coin_count/coin_count.tscn" id="10_gpw25"]
+[ext_resource type="PackedScene" uid="uid://ilogntt6hpn2" path="res://ux/game_over/game_over_high_score.tscn" id="11_qqc2j"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_td3ms")
@@ -17,6 +18,8 @@ script = ExtResource("1_td3ms")
 [node name="copter" parent="." instance=ExtResource("1_f525f")]
 top_level = true
 position = Vector2(300, 160)
+
+[node name="coin_count" parent="." instance=ExtResource("10_gpw25")]
 
 [node name="game_over" parent="." instance=ExtResource("3_1u38l")]
 visible = false
@@ -40,4 +43,5 @@ visible = false
 [node name="unlocks3" parent="." instance=ExtResource("9_54eo0")]
 visible = false
 
-[node name="coin_count" parent="." instance=ExtResource("10_gpw25")]
+[node name="game_over3" parent="." instance=ExtResource("11_qqc2j")]
+visible = false

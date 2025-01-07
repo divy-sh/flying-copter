@@ -4,6 +4,7 @@
 [ext_resource type="FontFile" uid="uid://bdl2dgv4b7dt0" path="res://ux/joystix.otf" id="2_dj050"]
 
 [node name="game_over" type="Node2D"]
+z_index = 1
 script = ExtResource("1_hj0ua")
 
 [node name="GameOver" type="RichTextLabel" parent="."]
@@ -15,7 +16,7 @@ theme_override_constants/outline_size = 20
 theme_override_fonts/normal_font = ExtResource("2_dj050")
 theme_override_font_sizes/normal_font_size = 90
 bbcode_enabled = true
-text = "[center]GAME OVER[center]"
+text = "[center]high score[center]"
 fit_content = true
 scroll_active = false
 
@@ -44,8 +45,13 @@ theme_override_font_sizes/font_size = 64
 text = "save"
 flat = true
 
-[node name="name" type="TextEdit" parent="."]
+[node name="name" type="LineEdit" parent="."]
 offset_left = 60.0
 offset_top = 960.0
 offset_right = 1020.0
-offset_bottom = 1160.0
+offset_bottom = 1080.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_dj050")
+theme_override_font_sizes/font_size = 64
+max_length = 10

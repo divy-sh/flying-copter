@@ -7,12 +7,14 @@ func _ready():
 	restart_button.pressed.connect(_save_pressed)
 
 func _save_pressed():
+	if len($name.text) <= 0:
+		return
+	Global.playerName = $name.text
 	Global.save()
 	Global.game_over()
-	get_tree().reload_current_scene()
 
 func _process(_delta):
-	if Global.game_state == Global.GameStates.OVER:
+	if Global.game_state == Global.GameStates.OVER_SAVE:
 		modulate.a = min(modulate.a + _delta / fade_duration, 1)
 		visible = true
 	else:
@@ -21,4 +23,4 @@ func _process(_delta):
 			visible = false
 
 	var score = $score
-	score.text = "[center]score: %s[center]" % Global.current_score
+	score.text = "[center]High Score: %s[center]" % Global.current_score

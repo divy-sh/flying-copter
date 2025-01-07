@@ -5,11 +5,13 @@ var fade_duration = 0.1
 func _ready():
 	var main_menu_button = $mainMenu
 	main_menu_button.pressed.connect(_main_menu_button_pressed)
-	var text = ""
+	var score_text = ""
+	var player_name_text = ""
 	for i in Global.save_data.high_score:
-		text += str(i[0]) + "\t\t" + i[1] + "\n"
-	var scores_text = $scores
-	scores_text.text = text
+		score_text += str(i[0]) + "\n"
+		player_name_text += str(i[1]) + "\n"
+	$scores.text = score_text
+	$player_names.text = player_name_text
 
 func _process(_delta):
 	if Global.game_state == Global.GameStates.HIGHSCORE:

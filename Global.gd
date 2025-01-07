@@ -5,6 +5,7 @@ enum GameStates {
 	IDLE,
 	PLAYING,
 	OVER,
+	OVER_SAVE,
 	HIGHSCORE,
 	UNLOCK,
 	UNLOCK_PLANES,
@@ -122,33 +123,35 @@ var default_save_data = {
 	"vehicles" = Vehicles,
 }
 
+var playerName = ""
+
 var save_data = {}
 
 var SPEED = -500
 var current_score = 0
 var game_state = GameStates.MENU
 
-func show_game_over():
-	save()
-
 func save():
 	save_data.coins += current_score
-	var time = Time.get_datetime_dict_from_system()
-	if len(save_data.high_score) < 10 and current_score > 0:
-		save_data.high_score.append([current_score, 
-		str(time.year) + "/" + str(time.month) + "/" + str(time.day)])
+	if is_high_score():
+		save_data.high_score.append([current_score, playerName])
 		save_data.high_score.sort()
 		save_data.high_score.reverse()
-	elif save_data.high_score and save_data.high_score[-1][0] < current_score:
+	if len(save_data.high_score) > 10:
 		save_data.high_score.pop_back()
-		save_data.high_score.append([current_score, 
-		str(time.year) + "/" + str(time.month) + "/" + str(time.day)])
-		save_data.high_score.sort()
-		save_data.high_score.reverse()
-	
+
 	var save_file = FileAccess.open("user://save.cfg", FileAccess.WRITE)
 	save_file.store_var(save_data)
 	save_file.close()
+
+func is_high_score():
+	return (
+		current_score > 0 and 
+		(
+			len(save_data.high_score) == 0 or 
+			current_score > save_data.high_score[-1][0]
+		)
+	)
 
 func load():
 	if not FileAccess.file_exists("user://save.cfg"):
@@ -161,6 +164,10 @@ func load():
 func game_over():
 	SPEED = 0
 	game_state = GameStates.OVER
+
+func game_over_save():
+	SPEED = 0
+	game_state = GameStates.OVER_SAVE
 
 func game_idle():
 	SPEED = -500

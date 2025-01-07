@@ -47,5 +47,7 @@ func show_explosion():
 
 func game_over():
 	show_explosion()
-	Global.show_game_over()
-	Global.game_over()
+	if Global.is_high_score():
+		Global.game_over_save()
+	else:
+		Global.game_over()
