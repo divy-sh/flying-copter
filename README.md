@@ -11,8 +11,3 @@
 
 ## Requirements
 - Godot Engine 4.x or later
-
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/divy-sh/flying-copter.git
