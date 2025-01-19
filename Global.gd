@@ -148,7 +148,7 @@ func is_high_score():
 	return (
 		current_score > 0 and 
 		(
-			len(save_data.high_score) == 0 or 
+			len(save_data.high_score) < 10 or 
 			current_score > save_data.high_score[-1][0]
 		)
 	)
@@ -162,6 +162,7 @@ func load():
 	save_data = file.get_var()
 
 func game_over():
+	save()
 	SPEED = 0
 	game_state = GameStates.OVER
 

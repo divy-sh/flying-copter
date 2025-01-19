@@ -10,7 +10,6 @@ func _save_pressed():
 	if len($name.text) <= 0:
 		return
 	Global.playerName = $name.text
-	Global.save()
 	Global.game_over()
 
 func _process(_delta):
