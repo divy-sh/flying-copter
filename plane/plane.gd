@@ -24,6 +24,7 @@ func _input(event):
 		Global.game_state == Global.GameStates.PLAYING):
 		Global.game_playing()
 		self.linear_velocity = Vector2(0, -1300)
+		$flap_sound.play()
 
 func _integrate_forces(state):
 	if not Global.game_state == Global.GameStates.PLAYING:
@@ -35,6 +36,7 @@ func _integrate_forces(state):
 			break
 
 func show_explosion():
+	$explosion_sound.play()
 	self.linear_velocity = Vector2.ZERO
 	self.gravity_scale = 0
 	var sprite = $sprite
